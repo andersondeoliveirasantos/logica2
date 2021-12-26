@@ -11,17 +11,7 @@
     <h2>Novo programa.</h2>
     <canvas width="600"></canvas>
     <script>
-      function pularLinha() {
-       document.write(<'br'>)
-       document.write(<'br'>)
-      }
-
-      function mostra(frase) {
-        document.write()
-        pularLinha
-      }
-
-      var tela = document.querySelector('canvas');
+      var tela = document.querySelector('canvas')
       var pincel = tela.getContext('2d')
 
       pincel.fillRect(0, 0, 600, 400)
