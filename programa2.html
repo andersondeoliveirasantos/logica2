@@ -26,8 +26,18 @@
       pincel.strokeRect(x, y, 50, 50)
     }
 
+    function desenhaQuadradoVermelho(x, y) {
+      var tela = document.querySelector('canvas')
+      var pincel = tela.getContext('2d')
+
+      pincel.fillStyle = 'red'
+      pincel.fillRect(x, y, 50, 50)
+      pincel.strokeStyle = 'black'
+      pincel.strokeRect(x, y, 50, 50)
+    }
+
     desenhaQuadradoVerde(0, 0)
-    desenhaQuadradoVerde(0, 50)
+    desenhaQuadradoVermelho(0, 50)
     desenhaQuadradoVerde(0, 100)
   </script>
 </html>
